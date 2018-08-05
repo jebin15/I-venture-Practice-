@@ -14,7 +14,6 @@ public class MeetingScheduler {
 	public static void main(String[] args) {
 		Arrays.sort(integer, arrayComparator);
 		for (int i = 1; i < integer.length; i++) {
-			// System.out.println(integer[i][0] + "," + integer[i][1]);
 			if (integer[i][0] < integer[i - 1][1]) {
 				System.out.println("(" + integer[i][0] + "," + integer[i][1] + ")" + " overlapping with "+"("
 						+ integer[i - 1][0] + "," + integer[i - 1][1]+")");
